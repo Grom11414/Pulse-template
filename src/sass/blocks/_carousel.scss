@@ -1,0 +1,76 @@
+.carousel {
+    padding: 81px 0;
+
+    &__inner {
+        position: relative;
+        width: 750px;
+        margin: 0 auto;
+        display: block;
+
+        @include lg-md {
+            img {
+                margin: 0 auto;
+                width: 80%;
+                height: 80%;
+            }
+        }
+
+        @include sm {
+            width: 300px;
+            margin: 0 auto;
+            img {
+                margin: 0 auto;
+                width: 90%;
+                height: 90%;
+            }
+        }
+    }
+
+    .slick-prev,
+    .slick-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -66px;
+        border: none;
+        background-color: $white-color;
+
+        img {
+            width: 31px;
+            height: 50px;
+        }
+    }
+
+    .slick-next {
+        right: -66px;
+        left: auto;
+    }
+
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 40px;
+        list-style-type: none;
+        padding-left: 0;
+
+        li {
+            margin: 0 25px;
+
+            button {
+                border: 3px solid $main-color;
+                border-radius: 100%;
+                height: 25px;
+                width: 25px;
+                background: none;
+                color: $white-color;
+
+                &:hover {
+                    background-color: $main-color;
+                    color: $main-color;
+                }
+            }
+        }
+    }
+}

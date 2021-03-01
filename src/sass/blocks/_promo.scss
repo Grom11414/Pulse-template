@@ -1,0 +1,89 @@
+.promo {
+    min-height: 650px;
+    padding: 21px 0 93px 0;
+    background: url('../img/bg/bg.jpg') center (center/cover) no-repeat;
+    @include sm {
+        min-height: 600px;
+        padding: 21px 0 50px 0  ;
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 91px;
+        @include lg-md {
+            align-items: center;
+        }
+        @include sm {
+            align-items: center;
+            margin-top: 40px;
+        }
+    }
+
+    &__header {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 36px;
+        text-transform: uppercase;
+        color: $white-color;
+        text-align: center;
+        @include lg-md {
+            font-size: 38px;
+        }
+    }
+
+    &__subheader {
+        font-weight: 500;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: $white-color;
+        text-align: center;
+        @include lg-md {
+            font-size: 20px;
+        }
+        @include sm {
+            margin-top: 20px;
+        }
+    }
+
+    &__icons {
+        margin-top: 65px;
+        display: flex;
+        width: 425px;
+        justify-content: space-between;
+        @include sm {
+            width: 325px;
+        }
+    }
+
+    &__icon {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        width: 108px;
+        font-weight: 500;
+        font-size: 14px;
+        text-align: center;
+        color: $white-color;
+
+        img {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__link {
+        margin-top: 18px;
+        font-weight: 500;
+        font-size: 16px;
+        color: $white-color;
+        transition: 0.3s color;
+        a {
+            text-decoration: underline;
+            &:hover {
+                color: $hover-color;
+            }
+        }
+    }
+}

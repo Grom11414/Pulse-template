@@ -1,0 +1,54 @@
+@import 'libs/animate.min';
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/font';
+@import 'libs/slick';
+
+@import 'base/variables';
+@import 'base/media';
+@import 'base/mixins';
+@import 'base/animations';
+
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/buttons';
+@import 'blocks/titles';
+@import 'blocks/advantages';
+@import 'blocks/consultation';
+@import 'blocks/forms';
+@import 'blocks/carousel';
+@import 'blocks/catalog';
+@import 'blocks/reviews';
+@import 'blocks/footer';
+@import 'blocks/models';
+@import 'blocks/pageup';
+@import 'blocks/main-menu';
+
+* {
+    font-family: $font-main;
+}
+
+a {
+    color: $white-color;
+
+    &:hover {
+        text-decoration: none;
+        color: $white-color;
+    }
+}
+
+button {
+    &:focus {
+        outline: none;
+    }
+}
+
+input {
+    &:focus {
+        outline: none;
+    }
+}
+
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+}
